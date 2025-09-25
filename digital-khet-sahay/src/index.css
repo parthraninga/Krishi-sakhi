@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Agricultural App Design System - Fresh, Natural, Mobile-First */
+
+@layer base {
+  :root {
+    /* Core brand colors - Agricultural theme */
+    --background: 120 20% 98%;
+    --foreground: 120 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 10% 15%;
+
+    /* Primary - Fresh Agricultural Green */
+    --primary: 130 40% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 130 35% 55%;
+    --primary-dark: 130 45% 35%;
+
+    /* Secondary - Earth Brown */
+    --secondary: 30 25% 85%;
+    --secondary-foreground: 30 15% 25%;
+    --secondary-warm: 35 30% 75%;
+
+    /* Accent - Sky Blue for water/weather */
+    --accent: 200 85% 65%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 200 80% 75%;
+
+    /* Muted tones */
+    --muted: 120 15% 94%;
+    --muted-foreground: 120 8% 45%;
+
+    /* Status colors */
+    --success: 145 60% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 40 85% 55%;
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI elements */
+    --border: 120 20% 88%;
+    --input: 120 15% 94%;
+    --ring: 130 40% 45%;
+
+    /* Agricultural gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted)) 100%);
+    --gradient-earth: linear-gradient(120deg, hsl(var(--secondary-warm)) 0%, hsl(var(--secondary)) 100%);
+
+    /* Shadows with natural feel */
+    --shadow-soft: 0 2px 8px hsl(var(--primary) / 0.08);
+    --shadow-medium: 0 4px 16px hsl(var(--primary) / 0.12);
+    --shadow-strong: 0 8px 32px hsl(var(--primary) / 0.16);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme with agricultural green accents */
+    --background: 120 15% 8%;
+    --foreground: 120 10% 92%;
+
+    --card: 120 10% 10%;
+    --card-foreground: 120 10% 92%;
+
+    --popover: 120 10% 10%;
+    --popover-foreground: 120 10% 92%;
+
+    /* Primary - Brighter green for dark mode */
+    --primary: 130 45% 55%;
+    --primary-foreground: 120 15% 8%;
+    --primary-light: 130 40% 65%;
+    --primary-dark: 130 50% 45%;
+
+    /* Secondary - Warmer earth tones for dark mode */
+    --secondary: 30 15% 15%;
+    --secondary-foreground: 30 25% 85%;
+    --secondary-warm: 35 20% 20%;
+
+    /* Accent - Lighter blue for better contrast */
+    --accent: 200 75% 75%;
+    --accent-foreground: 120 15% 8%;
+    --accent-light: 200 70% 85%;
+
+    /* Status colors for dark mode */
+    --success: 145 55% 55%;
+    --success-foreground: 120 15% 8%;
+    --warning: 40 80% 65%;
+    --warning-foreground: 120 15% 8%;
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 120 15% 8%;
+
+    /* Muted tones for dark mode */
+    --muted: 120 10% 15%;
+    --muted-foreground: 120 8% 65%;
+
+    /* UI elements */
+    --border: 120 15% 18%;
+    --input: 120 10% 15%;
+    --ring: 130 45% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
